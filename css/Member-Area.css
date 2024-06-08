@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  color: #525252;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: #eeeeee;
+  align-items: center;
+  padding: 10px 10%;
+  justify-content: space-between;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00adb5;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #eeeeee;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h4 {
+  font-weight: bold;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0px;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+
+/* NavBar Section End */
+
+/* Poster Section Start */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: -50px;
+}
+
+.wrapper img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: -50px;
+}
+/* Poster Section End */
+
+/* Profile Section Start */
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12%;
+  font-family: "Montserrat", sans-serif;
+}
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.user-card:before {
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 173px;
+  background: #00adb5;
+  top: -60px;
+  left: -125px;
+  z-index: 0;
+  transform: rotate(17deg);
+}
+
+.user-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.user-card-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-card-info {
+  text-align: center;
+  z-index: 3;
+}
+
+.user-card-info h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.user-card-info p {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.user-card-info p span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.user-card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  z-index: 3;
+}
+
+.user-card-buttons a {
+  flex: 1;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 8px 15px;
+  background: #525252;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #525252;
+}
+
+.btn-secondary {
+  background: #007bff;
+}
+
+.btn:hover {
+  letter-spacing: 1px;
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .user-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .user-card-img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .user-card-info {
+    text-align: left;
+    margin-right: auto;
+  }
+  .user-card-buttons {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper2 {
+    padding-top: 3%;
+  }
+  .user-card:before {
+    width: 300%;
+    height: 200px;
+    transform: rotate(0);
+  }
+  .user-card-info h2 {
+    margin-top: 25px;
+    font-size: 35px;
+  }
+  .user-card-info p span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .user-card-buttons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+/* MyCourses Section Start */
+
+.wrapper3 {
+  max-height: 650px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  background-color: #00adb5;
+  border-radius: 10px;
+  padding: 40px;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 80px;
+}
+
+.wrapper3 .accordion h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.wrapper3 .accordion h2 {
+  margin-left: 40px;
+}
+
+.accordion {
+  margin: 20px;
+  width: 800px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background: #eeeeee;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  color: #525252;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+  -webkit-transition: max-height 0.5s, padding 0.5s;
+  -moz-transition: max-height 0.5s, padding 0.5s;
+  -ms-transition: max-height 0.5s, padding 0.5s;
+  -o-transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+.btn2 {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #525252;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: red;
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+/* MyCourses Section End */

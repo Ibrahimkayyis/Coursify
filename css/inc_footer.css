@@ -1,0 +1,161 @@
+/* Footer section start */
+.footer {
+  width: 100%;
+  background: #222831;
+  color: #fff;
+  padding: 50px 0 10px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.footer__row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footer__col:nth-child(2),
+.footer__col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer__logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.footer__col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer__email-id {
+  width: fit-content;
+  border-bottom: 1px solid #fff;
+  margin: 20px 0;
+}
+
+.footer__col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.footer__col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.footer__form .fa-regular {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer__form input {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+.footer__form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer__form button .fa-solid {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer__hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 20px auto;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.footer__underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: footer-moving 2s linear infinite;
+}
+
+@keyframes footer-moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    bottom: unset;
+  }
+
+  .footer__col {
+    flex-basis: 100%;
+  }
+
+  .footer__col:nth-child(2),
+  .footer__col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+/* Footer section end */
